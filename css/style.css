@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
+    /* border: 1px solid pink; */
 }
 
 
@@ -27,7 +28,7 @@
 
 #rubrik{
     grid-area: rub;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 #image1{
     display: flex;
@@ -39,16 +40,22 @@
     align-content: center;
 }
 #menu{
-    display: flex;
     grid-area: mu1;
+}
+
+#menuin{
+    display: flex;
     border: solid darkred;
 
     justify-content: center;
     align-content: center;
 }
-#about{
+#about{ 
+    grid-area: ab1; 
+}
+
+#aboutin{
     display: flex;
-    grid-area: ab1;
     border: solid darkred;
 
     justify-content: center;
