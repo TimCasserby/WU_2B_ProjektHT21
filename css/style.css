@@ -7,72 +7,108 @@
 
 
 
-
+   
 #grid_wrapper{
     display: grid;
     width: 100vw;
     height: 100vh;
-    background: orange;
+   
 
 
     grid-template-areas:
-    "rub im1 mu1 ab1 im2"
-    "bur bur bur bur bur";
+    "headr"
+    "burger";
 
 
-    grid-template-columns: 5fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: 10vh, 90vh;
+
+    background: url("../img/correctholdingburger.png");
 
     
 }
 
+#burgerbackground{
+    grid-area: burger;
+}
+
+#burgartext{
+    font-size: 3.5rem;
+    color: white;
+    margin: 50px;
+}
+
+header{
+    height: 10vh;
+    grid-area: headr;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: solid black 0.5vh;
+    background: rgba(255, 255, 255, 0.363);
+}
+
 #rubrik{
-    grid-area: rub;
     font-size: 4rem;
 }
 #image1{
     display: flex;
-    grid-area: im1;
-    width: 80px;
+    width: 70px;
     height: auto;
 
     justify-content: center;
     align-content: center;
 }
 #menu{
-    grid-area: mu1;
+    display: flex;
+    width: 100px;
+    /* background: orange; */
+    align-content: center;
+    justify-content: center;
 }
 
 #menuin{
     display: flex;
-    border: solid darkred;
-
+    border: solid darkred; 
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
+    height: 35px;
+    width: 110px;
     justify-content: center;
-    align-content: center;
+
+
+  
 }
 #about{ 
-    grid-area: ab1; 
+    display: flex;
 }
 
 #aboutin{
     display: flex;
-    border: solid darkred;
-
+    border: solid darkred; 
+    background: rgba(0, 0, 0, 0.61);
+    color: white;
+    height: 35px;
+    width: 110px;
     justify-content: center;
-    align-content: center;
+
+
+   
 }
 #image2{
     display: flex;
-    width: 80px;
+    width: 70px;
     height: auto;
-    grid-area: im2;
     justify-content: center;
     align-content: center;
     
 }
 
-#burgerbackground{
-    grid-area: bur;
-    width: 100vw;
-    height: auto;
+#meny{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
+
+
+
