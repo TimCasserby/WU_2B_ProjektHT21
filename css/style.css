@@ -20,8 +20,8 @@
     "burger";
 
 
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh, 90vh;
+    grid-template-columns: minmax(800px, 1fr);
+    grid-template-rows: minmax(80px, 10fr) 90fr;
 
     background: url("../img/correctholdingburger.png");
 
@@ -39,7 +39,7 @@
 }
 
 header{
-    height: 10vh;
+    /* height: 10vh; */
     grid-area: headr;
     display: flex;
     align-content: center;
@@ -61,7 +61,7 @@ header{
 }
 #menu{
     display: flex;
-    width: 100px;
+    width: 130px;
     /* background: orange; */
     align-content: center;
     justify-content: center;
@@ -81,6 +81,9 @@ header{
 }
 #about{ 
     display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 130px;   
 }
 
 #aboutin{
