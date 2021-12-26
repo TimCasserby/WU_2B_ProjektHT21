@@ -5,7 +5,10 @@
     /* border: 1px solid pink; */
 }
 
-
+/* 
+x) GÖRA MENU / ABOUT I MITTEN
+x) GÖRA VENGEFUL BURGERS JUSTERBAR
+*/
 
    
 #grid_wrapper{
@@ -35,7 +38,8 @@
 #burgartext{
     font-size: 3.5rem;
     color: white;
-    margin: 50px;
+    margin: 30px;
+    padding: 20px;
 }
 
 header{
@@ -50,6 +54,7 @@ header{
 
 #rubrik{
     font-size: 4rem;
+    color: black;
 }
 #image1{
     display: flex;
@@ -111,6 +116,22 @@ header{
     display: flex;
     justify-content: space-around;
     align-content: center;
+}
+
+#aboutin:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.91);
+}
+
+#menuin:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.91);
+}
+
+#rubrik:hover{
+    cursor: pointer;
+    background: rgba(134, 0, 0, 0.31);
+    border-radius: 10px;
 }
 
 
