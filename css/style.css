@@ -135,4 +135,27 @@ header{
 }
 
 
+a{
+    text-decoration: none;
+}
+
+#about_grid_wrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-areas:
+    "headr headr"
+    "btext btext"
+    "imag1 text1"
+    "imag2 text2";
+
+
+    grid-template-columns: minmax(400px, 1fr) minmax(800px, 2fr);
+    grid-template-rows: minmax(80px, 1fr) minmax(100px, 1.5fr) minmax(150px, 3fr) minmax(150px, 3fr);
+
+
+}
+
+
 
