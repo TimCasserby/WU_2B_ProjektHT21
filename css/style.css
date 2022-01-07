@@ -162,8 +162,8 @@ a{
     "imag2 text2";
 
 
-    grid-template-columns: minmax(400px, 1fr) minmax(800px, 2fr);
-    grid-template-rows: minmax(80px, 6.5fr) minmax(30px, 5fr) minmax(150px, 30fr) minmax(150px, 30fr);
+    grid-template-columns: minmax(500px, 1fr) minmax(800px, 2fr);
+    grid-template-rows: minmax(80px, 6.5fr) minmax(30px, 5fr) minmax(250px, 30fr) minmax(250px, 30fr);
 
 
 }
@@ -203,4 +203,24 @@ a{
     background: rgba(212, 212, 212, 0.767);
 }
 
+
+/* STYLING FÖR MENU */
+
+#menu_grid_wrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-areas:
+    "headerr headerr headerr"
+    "Bur1tex Bur2tex Bur3tex"
+    "Bur1img Bur2img Bur3img"
+    "But1des Bur2des Bur3des";
+
+
+    grid-template-columns: minmax(500px, 1fr) minmax(800px, 2fr);
+    grid-template-rows: minmax(80px, 6.5fr) minmax(30px, 5fr) minmax(250px, 30fr) minmax(250px, 30fr);
+
+
+}
 
