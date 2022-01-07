@@ -9,7 +9,14 @@
 x) GÖRA MENU / ABOUT I MITTEN
 x) GÖRA VENGEFUL BURGERS JUSTERBAR
 */
-
+h2{
+    font-size: 1.7rem;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgba(83, 0, 0, 0.767);
+    color: white;
+    margin: 2px;
+    padding: 3px;
+}
    
 #grid_wrapper{
     display: grid;
@@ -139,23 +146,61 @@ a{
     text-decoration: none;
 }
 
+#aroundall{
+    background:  rgb(187, 187, 187);
+}
+
 #about_grid_wrapper{
     display: grid;
     width: 100vw;
     height: 100vh;
 
     grid-template-areas:
-    "headr headr"
-    "btext btext"
+    "heada heada"
+    "blank blank"
     "imag1 text1"
     "imag2 text2";
 
 
     grid-template-columns: minmax(400px, 1fr) minmax(800px, 2fr);
-    grid-template-rows: minmax(80px, 1fr) minmax(100px, 1.5fr) minmax(150px, 3fr) minmax(150px, 3fr);
+    grid-template-rows: minmax(80px, 6.5fr) minmax(30px, 5fr) minmax(150px, 30fr) minmax(150px, 30fr);
 
 
 }
 
+
+#im1{
+    grid-area: imag1;
+    width: 440px;
+    height: auto;
+    border: 4px solid black;
+}
+
+#im2{
+    grid-area: imag2;
+    width: 440px;
+    height: auto;
+    border: 4px solid black;
+}
+
+#imt1{
+    grid-area: text1;
+    width: 600px;
+}
+
+#imt2{
+    grid-area: text2;
+    width: 600px;
+}
+
+#aboutheader{
+    /* height: 10vh; */
+    grid-area: heada;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: solid black 0.5vh;
+    background: rgba(212, 212, 212, 0.767);
+}
 
 
