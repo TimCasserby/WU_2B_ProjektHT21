@@ -215,12 +215,69 @@ a{
     "headerr headerr headerr"
     "Bur1tex Bur2tex Bur3tex"
     "Bur1img Bur2img Bur3img"
-    "But1des Bur2des Bur3des";
+    "Bur1des Bur2des Bur3des";
 
 
-    grid-template-columns: minmax(500px, 1fr) minmax(800px, 2fr);
-    grid-template-rows: minmax(80px, 6.5fr) minmax(30px, 5fr) minmax(250px, 30fr) minmax(250px, 30fr);
+    grid-template-columns: minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr);
+    grid-template-rows: minmax(80px, 6.5fr) minmax(100px, 7fr) minmax(250px, 30fr) minmax(250px, 30fr);
 
 
 }
 
+/* burger 1 */
+#burger1text{
+    display: flex;
+    grid-area: Bur1tex;
+    justify-content: center;
+
+}
+
+#burger1image{
+    grid-area: Bur1img;
+    width: 300px;
+    height: auto;
+}
+
+#burger1description{
+    grid-area: Bur1des;
+}
+/* burger 2 */
+
+#burger2text{
+    grid-area: Bur2tex;
+}
+    
+#burger2image{
+    grid-area: Bur2img;
+    width: 300px;
+    height: auto;
+}
+    
+#burger2description{
+    grid-area: Bur2des;
+}
+/* burger 3 */
+
+#burger3text{
+    grid-area: Bur3tex;
+}
+    
+#burger3image{
+    grid-area: Bur3img;
+    width: 300px;
+    height: auto;
+}
+    
+#burger3description{
+    grid-area: Bur3des;
+}
+
+#menuheader{
+    /* height: 10vh; */
+    grid-area: headerr;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    border: solid black 0.5vh;
+    background: rgba(212, 212, 212, 0.767);
+}
