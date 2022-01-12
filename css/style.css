@@ -213,11 +213,13 @@ a{
 
     grid-template-areas:
     "headerr headerr headerr"
-    "burger1 burger2 burger3";
+    "burger1 burger2 burger3"
+    "customt customt customt";
+    background: rgb(141, 141, 141);
 
 
     grid-template-columns: minmax(500px, 1fr) minmax(500px, 1fr) minmax(500px, 1fr);
-    grid-template-rows: minmax(80px, 6.5fr) minmax(600px, 67fr);
+    grid-template-rows: minmax(85px, 7.7fr) minmax(450px, 67fr) minmax(150px, 10fr);
 
 
 }
@@ -264,10 +266,23 @@ a{
     grid-area: burger3;
 }
 
+#customtextdiv{
+    display: flex;
+    align-content: center;
+}
+
+#customtext{
+    grid-area: customt;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+    height: 60px;
+    border: 4px black solid;
+}
 
 
 #menuheader{
-    /* height: 10vh; */
+    height: 80px;
     grid-area: headerr;
     display: flex;
     align-content: center;
