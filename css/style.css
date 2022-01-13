@@ -45,7 +45,14 @@ h2{
     grid-area: burger;
 }
 
-#burgartext{
+#burgertexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.burgartext{
+    display: flex;
+    justify-content: left;
     font-size: 3.5rem;
     color: white;
     margin: 30px;
@@ -178,13 +185,14 @@ a{
 #locations{
     display: flex;
     grid-area: plats;
-    height: 80vh;
-    width: 20vw;
+    height: 610px;
+    width: 320px;
     background: rgba(255, 255, 255, 0.814);
     border-radius: 10px;
     justify-content: center;
     align-content: center; 
     margin: 40px;   
+    flex-direction: column;
 
     font-size: 1rem;
 }
